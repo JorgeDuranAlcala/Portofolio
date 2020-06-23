@@ -1,0 +1,83 @@
+.contact {
+    &_sec {
+        background:linear-gradient(to bottom, magenta 27.35%, coral 62.96%);;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+            font-size: 3.5em;
+            margin-bottom: 8vmin;
+            color: #fff;
+        }
+        .form {
+            width: 40%;
+            display: flex;
+            margin-bottom: 8vmin;
+            flex-direction: column;
+            background: #1e1e1e;
+            padding: 4vmin;
+            border-radius: 10px;
+            input[type="text"] {
+                background: #2e2e2e;
+                margin-bottom: 2.5vmin;
+                padding: 2vmin;
+                border: none;
+                outline: none;
+                border-radius: 10px;
+                color: #fff;
+                &::placeholder {
+                    font-size: 1.2em;
+                    padding: 2vmin 0;
+                }
+            }
+            textarea {
+                background: #2e2e2e;
+                padding: 2vmin ;
+                color: #fff;
+                outline: none;
+                margin-bottom: 2.5vmin;
+                border-radius: 10px;
+                border: none;
+                &::placeholder {
+                    font-size: 1.2em;
+                    padding: 0vmin ;
+                }
+            }
+            button {
+                border-radius: 10px;
+                padding: 2vmin 0;
+                background: #000000;
+                color: #fff;
+                font-size: 1.5em;
+                font-weight: bold;
+                text-transform: uppercase;
+                border: none;
+                outline: none;
+                transition: .5s all ease;
+                &:hover {
+                    background: #5e5e5e;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 780px) {
+    .contact {
+        &_sec {
+
+            h2 {
+                padding: 12vmin 0 2vmin 0;
+            }
+            .form {
+                width: 85% !important;   
+            }
+        }
+    }
+}

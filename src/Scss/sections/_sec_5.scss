@@ -1,0 +1,49 @@
+.sec_5 {
+    background-image: url(../assets/img/bgdark.png) !important;
+    background-size: cover !important;
+    background-position:  !important;
+    background-repeat: no-repeat !important;
+    height: auto !important;
+    .btn {
+        margin: 20vmin !important;
+        padding: 5vmin 15vmin;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: none;
+        font-size: 1.5em;
+        animation: changeBg 8s linear infinite;
+        background: linear-gradient(to top, magenta, coral);
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .project_list {
+        grid-gap: 0 4vmin;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .btn {
+        font-size: 1em !important;
+    }
+}
+@media screen and (max-width: 650px) {
+
+    .sec_5 {
+        &_title {
+            width: max-content;
+            font-size: 1.5em !important;
+        }
+    }
+
+    .project_list {
+        grid-template-columns: 1fr !important;
+    }
+    .btn {
+        font-size: 1em !important;
+    }
+}
+
+@keyframes changeBg {
+    0% { background: linear-gradient(to bottom, coral, magenta);}
+    50% { background: linear-gradient(to bottom, #28c7fa, #775ada);}
+    100% { background: linear-gradient(to top, #ffd615, #ff1f5a); }
+} 

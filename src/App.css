@@ -1,0 +1,21 @@
+@import "./Scss/index.css";
+
+
+.cont-1 {
+  background-color: aliceblue;
+}
+.cont-2 {
+  background-color: rgb(250, 9, 9);
+}
+.cont-3 {
+  background-color: rgb(2, 135, 251);
+}
+.cont-4 {
+  background-color: rgb(11, 238, 3);
+}
+.cont-5 {
+  background-color: rgb(240, 236, 3);
+}
+.cont-6 {
+  background-color: rgb(1, 8, 14);
+}

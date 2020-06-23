@@ -1,0 +1,91 @@
+@import "./index.module.scss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@for $i from 0 through 6 {
+    h#{$i} {
+        font-family: 'Poppins';
+    }
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+
+section {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden !important;
+}
+
+
+
+.sec_1 {
+    background: url(../assets/img/PersonSky.jpg);
+    background-position: 0 -100px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1em;
+        
+        h1 {
+            color: #fff;
+            font-size: 3.5em;
+            font-weight: 900;
+            width: 80%;
+        }
+        h4 {
+            color: #fff;
+            text-align: center;
+        font-size: 2em;
+        opacity: 0.8;
+    }
+    }
+}
+
+
+
+
+
+@keyframes bars {
+    from { width: 0%;}
+}
+
+@media screen and (max-width: 780px) {
+    body, html {
+        overflow-x: hidden !important;
+    }
+
+    .sec_1 {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    
+    .sec_1 {
+        font-size: 12px;
+        .hero {
+            h1 {
+                width: max-content;
+            }
+        }
+    }
+    .my_card {
+        font-size: 13px;
+    }
+}
+

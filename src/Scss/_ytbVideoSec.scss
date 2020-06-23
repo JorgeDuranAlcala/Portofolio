@@ -1,0 +1,65 @@
+.sec_6 {
+    background-image: url(../assets/img/svgs/IlustGradient.svg);
+    background-size: cover;
+    background-position: -40px 0px;
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    position: relative;
+
+    .ytb_tl {
+
+            margin: 6vmin 24vmin 20vmin 0;
+
+            &_subtitle {
+                font-size: 3em;
+                padding: 0px 20px;
+                text-align: center;
+            font-weight: bold;
+            left: 30%;
+            position: relative;
+            top: 0;
+            .ytb_icon {
+                position: absolute;
+                left: -25%;
+                font-size: 2.5em;
+                top: -30px;
+                color: red;
+            }
+        }
+    }
+    
+    &_grid {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10vmin 4vmin;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .sec_6 {
+        height: auto;
+        &_grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .ytb_tl {
+            &_subtitle {
+                font-size: 2.1em;
+                width: max-content;
+                .ytb_icon {
+                    left: -20%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 650px) {
+    .sec_6 {
+        &_grid {
+            grid-template-columns: 1fr;
+        }
+    }
+}

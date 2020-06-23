@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .myProjects_list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .myProjects_list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 650px) {
+    .myProjects_list {
+        
+    }
+}

@@ -1,0 +1,41 @@
+section:nth-of-type(3) {
+    position: relative;
+    display: flex;
+    background: #1e1e1e;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1vmin .5vmin 6vmin .5vmin;
+    height: auto !important;
+    .subtitle-3 {
+        text-align: center;
+        padding: 4vmin 0;
+        font-size: 3em;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .skillBars {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.625em 20vmin;
+       
+        @each $name, $color, $bg, $percent in $colors{
+            @include skills($name, $color, $bg);
+            @include icons($color, $name);
+            @include progress($bg, $name, $percent);
+        } 
+
+     
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+        section:nth-of-type(3) {
+            .skillBars {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(auto, 1fr);
+            }
+        }
+}

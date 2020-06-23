@@ -1,0 +1,53 @@
+.wave {
+    width: 200%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: url(../assets/img/svgs/wave_2.svg);
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+    overflow-x: hidden;
+    background-repeat: repeat-x;
+
+    &_1 {
+        animation: aniwave1 50s infinite linear;
+        opacity: 1;
+        z-index: 1000;
+    }
+    &_2 {
+        animation: aniwave1 45s infinite linear;
+        //background: url(../assets/img/svgs/wave_2.svg) !important;
+        opacity: .5;
+        z-index: 997;
+    }
+    &_3 {
+        animation: aniwave1 35s infinite linear;
+        //background: url(../assets/img/svgs/wave_3.svg) !important;
+        opacity: .75;
+        z-index: 998;
+    }
+    &_4 {
+        opacity: .80;
+       // background: url(../assets/img/svgs/wave_4.svg) !important;
+        animation: aniwave1 30s infinite linear;
+        z-index: 999;
+    }
+    
+}
+/* background-color: #0A0B26; */
+/* #221F73 */
+
+@media screen and (max-width: 780px) {
+    .wave {
+        display: none;
+    }
+}
+
+@keyframes aniwave1 {
+    0% { transform: translateX(0%) translateZ(0) scaleY(.2) ; }
+    50% { transform: translateX(-25%) translateZ(0) scaleY(.4) ; }
+    100% { transform: translateX(-50%) translateZ(0) scaleY(.5) ; }
+}

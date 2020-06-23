@@ -1,0 +1,25 @@
+/* Color Theme Swatches in Hex */
+$color-1: #100E40;
+$color-2: #171559;
+$color-3: #221F73;
+$color-4: #0A0B26;
+$color-5: #00040D;
+
+/* gradients colors */
+
+$html-bar: linear-gradient(to right, #f12711, #f5af19);
+$react-bar: linear-gradient(to right, #11d7f1, #19f5c5);
+$css-bar: linear-gradient(to right, #084be6, #0bd7fb);
+$js-bar: linear-gradient(to left, #a0fb0d, #f4f803);
+$php-bar: linear-gradient(to left, #ff00cc, #333399);
+$nodeJs-bar: linear-gradient(to left, #00f260, #0575e6);
+
+/* List of Vars */
+
+$colors: 
+"html" brown $html-bar 90%,
+"css" blue $css-bar 85%,
+"js" rgba(245, 241, 46, 0.794) $js-bar 85%,
+"react" rgb(7, 233, 241) $react-bar 70%,
+"php" #333399 $php-bar 60%,
+"nodeJs" #00f260 $nodeJs-bar 75%;
